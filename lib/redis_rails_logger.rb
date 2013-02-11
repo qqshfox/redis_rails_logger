@@ -1,6 +1,7 @@
 require "redis_rails_logger/version"
 require 'redis_rails_logger/log_subscriber'
 require 'redis_rails_logger/railtie' if defined?(Rails)
+require 'redis_rails_logger/rack_rails_logger' if defined?(RackRailsLogger)
 
 module RedisRailsLogger
 end
