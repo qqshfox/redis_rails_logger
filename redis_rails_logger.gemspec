@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = RedisRailsLogger::VERSION
   gem.authors       = ["Hanfei Shen"]
   gem.email         = ["qqshfox@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Rails-like logger for redis}
+  gem.summary       = %q{Rails-like logger for redis}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
