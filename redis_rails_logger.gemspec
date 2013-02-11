@@ -5,7 +5,7 @@ require 'redis_rails_logger/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "redis_rails_logger"
-  gem.version       = Redis::Rails::Logger::VERSION
+  gem.version       = RedisRailsLogger::VERSION
   gem.authors       = ["Hanfei Shen"]
   gem.email         = ["qqshfox@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_runtime_dependency "redis-rails"
-  gem.add_runtime_dependency "rails"
+  gem.add_runtime_dependency "activesupport"
 end
