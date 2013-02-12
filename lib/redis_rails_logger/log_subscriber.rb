@@ -31,7 +31,7 @@ module RedisRailsLogger
       cmds_output = ''
       cmds.each do |cmd, *args|
         if args.present?
-          cmds_output << " [ #{cmd.to_s.upcase} #{args.map(&:dump).join(" ")} ]"
+          cmds_output << " [ #{cmd.to_s.upcase} #{args.map(&:inspect).join(" ")} ]"
         else
           cmds_output << " [ #{cmd.to_s.upcase} ]"
         end
@@ -44,7 +44,7 @@ module RedisRailsLogger
         name = color(name, MAGENTA, true)
       end
 
-      debug "  #{name} #{cmds_output} #{result.dump}"
+      debug "  #{name} #{cmds_output} #{result.inspect}"
     end
 
     private
